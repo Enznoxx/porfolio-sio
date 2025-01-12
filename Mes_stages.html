@@ -9,7 +9,6 @@
 </head>
 <body>
     <header>
-        
         <h1 class="h1">Mes Stages</h1>
         <!-- Menu de navigation -->
         <nav>
@@ -24,10 +23,10 @@
     </header>
 
     <main>
-         <!-- Titre "Formation actuelle ?" qui sera cliqué pour afficher le cadre -->
-         <h2 id="toggle-text-formation1" class="presentation2">Stage : Institut mines télécom bussiness school et télécom Sud Paris </h2>
+         <!-- Titre "Stage : Institut mines télécom" qui sera cliqué pour afficher le cadre -->
+         <h2 id="toggle-text-formation1" class="presentation2">Stage : Institut Mines-Télécom Business School et Télécom Sud Paris </h2>
 
-         <!-- Cadre contenant le texte, masqué par défaut pour la formation actuelle -->
+         <!-- Cadre contenant le texte, masqué par défaut -->
          <div id="content-formation1" class="cadre hidden">
         <section class="cadre">
             <h2>Stage au département DISI (Direction Informatique et Systèmes)</h2>
@@ -37,59 +36,82 @@
             
             <h3>Une alliance entre deux écoles :</h3>
             
-            <ul>
-                <li>
-                    <h4>1. Télécom Sud-Paris</h4>
-                    <p><strong>Spécialité</strong> : Grande école d'ingénieurs dans les domaines de l'informatique, des télécommunications et des technologies numériques.</p>
-                    <p><strong>Objectifs</strong> : Former des ingénieurs experts en technologies, réseaux et systèmes.</p>
-                    <p><strong>Chiffres clés</strong> :</p>
+            
+                   <!-- Titre cliquable pour afficher/masquer le contenu -->
+                    <h4 id="toggle-text-telecom-sud-paris" class="presentation2">1. Télécom Sud-Paris</h4>
                     <ul>
-                        <li>1 302 étudiants</li>
-                        <li>374 personnels</li>
-                        <li>Environ 150 doctorants</li>
-                        <li>Partenariat stratégique : Co-fondatrice de l’Institut Polytechnique de Paris (IP Paris).</li>
-                    </ul>
+                    <!-- Section cachée que l'on veut afficher/masquer -->
+                    <div id="content-telecom-sud-paris" class="cadre hidden">
+                        <div id="hidden-text">
+                            
+                                
+                            <p><strong>Spécialité</strong> : Grande école d'ingénieurs dans les domaines de l'informatique, des télécommunications et des technologies numériques.</p>
+                            <p><strong>Objectifs</strong> : Former des ingénieurs experts en technologies, réseaux et systèmes.</p>
+                            <p><strong>Chiffres clés</strong> :</p>
+                            <ul>
+                                <li>1 302 étudiants</li>
+                                <li>374 personnels</li>
+                                <li>Environ 150 doctorants</li>
+                                <li>Partenariat stratégique : Co-fondatrice de l’Institut Polytechnique de Paris (IP Paris).</li>
+                            </ul>
+                        </div>
+                  
                 </li>
-                <li>
-                    <h4>2. Institut Mines-Télécom Business School</h4>
-                    <p><strong>Spécialité</strong> : Grande école de commerce et de management, orientée vers la transformation numérique.</p>
-                    <p><strong>Objectifs</strong> : Former des managers et entrepreneurs responsables.</p>
-                    <p><strong>Chiffres clés</strong> :</p>
-                    <ul>
-                        <li>1 124 étudiants</li>
-                        <li>180 personnels</li>
-                        <li>Accréditations AACSB et AMBA.</li>
-                    </ul>
+                
+                    <!-- Titre cliquable pour afficher/masquer le contenu -->
+                    <h4 id="toggle-text-imt-bs" class="presentation2">2. Institut Mines-Télécom Business School</h4>
+                   
+                    <!-- Section cachée que l'on veut afficher/masquer -->
+                    <div id="content-imt-bs" class="cadre hidden">
+                        <li>
+                        <p><strong>Spécialité</strong> : Grande école de commerce et de management, orientée vers la transformation numérique.</p>
+                        <p><strong>Objectifs</strong> : Former des managers et entrepreneurs responsables.</p>
+                        <p><strong>Chiffres clés</strong> :</p>
+                        <ul>
+                            <li>1 124 étudiants</li>
+                            <li>180 personnels</li>
+                            <li>Accréditations AACSB et AMBA.</li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
             
-            <h3>Groupe Institut Mines-Télécom :</h3>
-            <p>Les deux écoles font partie du groupe Institut Mines-Télécom, qui regroupe huit grandes écoles publiques et deux écoles filiales.</p>
-            
-            <h3>Fiche entreprise :</h3>
-            <h4>Télécom Sud-Paris</h4>
-            <ul>
-                <li><strong>Raison sociale</strong> : Télécom Sud-Paris</li>
-                <li><strong>Adresse</strong> : 9 RUE CHARLES FOURIER - 91000 EVRY-COURCOURONNES</li>
-                <li><strong>Numéro téléphone</strong> : 01 60 76 40 40</li>
-                <li><strong>Forme juridique</strong> : EPSCP</li>
-                <li><strong>Dirigeant</strong> : François DELLACHERIE</li>
-                <li><strong>Date de création</strong> : 01/03/2012</li>
-                <li><strong>Effectifs personnels</strong> : 374</li>
-                <li><strong>Nombre d’étudiants</strong> : 1302</li>
-            </ul>
+            <!-- Titre pour afficher/masquer le contenu de 'Groupe Institut Mines-Télécom' -->
+<h4 id="toggle-text-groupe-mines-telecom" class="presentation2">3. Groupe Institut Mines-Télécom</h4>
+<!-- Contenu caché de 'Groupe Institut Mines-Télécom' -->
+<div id="content-groupe-mines-telecom" class="cadre hidden">
+    <p>Les deux écoles font partie du groupe Institut Mines-Télécom, qui regroupe huit grandes écoles publiques et deux écoles filiales.</p>
+</div>
 
-            <h4>Institut Mines-Télécom Business School</h4>
-            <ul>
-                <li><strong>Raison sociale</strong> : Institut Mines-Télécom Business School</li>
-                <li><strong>Adresse</strong> : 9 RUE CHARLES FOURIER - 91000 EVRY-COURCOURONNES</li>
-                <li><strong>Numéro téléphone</strong> : 01 60 76 40 40</li>
-                <li><strong>Forme juridique</strong> : EPSCP</li>
-                <li><strong>Dirigeant</strong> : Herbert CASTERAN</li>
-                <li><strong>Date de création</strong> : 01/03/2012</li>
-                <li><strong>Effectifs personnels</strong> : 180</li>
-                <li><strong>Nombre d’étudiants</strong> : 1124</li>
-            </ul>
+<!-- Titre pour afficher/masquer le contenu de 'Fiche entreprise' -->
+<h4 id="toggle-text-fiche-entreprise" class="presentation2">4. Fiche entreprise</h4>
+<!-- Contenu caché de 'Fiche entreprise' -->
+<div id="content-fiche-entreprise" class="cadre hidden">
+    <h4>Télécom Sud-Paris</h4>
+    <ul>
+        <li><strong>Raison sociale</strong> : Télécom Sud-Paris</li>
+        <li><strong>Adresse</strong> : 9 RUE CHARLES FOURIER - 91000 EVRY-COURCOURONNES</li>
+        <li><strong>Numéro téléphone</strong> : 01 60 76 40 40</li>
+        <li><strong>Forme juridique</strong> : EPSCP</li>
+        <li><strong>Dirigeant</strong> : François DELLACHERIE</li>
+        <li><strong>Date de création</strong> : 01/03/2012</li>
+        <li><strong>Effectifs personnels</strong> : 374</li>
+        <li><strong>Nombre d’étudiants</strong> : 1302</li>
+    </ul>
+
+    <h4>Institut Mines-Télécom Business School</h4>
+    <ul>
+        <li><strong>Raison sociale</strong> : Institut Mines-Télécom Business School</li>
+        <li><strong>Adresse</strong> : 9 RUE CHARLES FOURIER - 91000 EVRY-COURCOURONNES</li>
+        <li><strong>Numéro téléphone</strong> : 01 60 76 40 40</li>
+        <li><strong>Forme juridique</strong> : EPSCP</li>
+        <li><strong>Dirigeant</strong> : Herbert CASTERAN</li>
+        <li><strong>Date de création</strong> : 01/03/2012</li>
+        <li><strong>Effectifs personnels</strong> : 180</li>
+        <li><strong>Nombre d’étudiants</strong> : 1124</li>
+    </ul>
+</div>
+
         </section>
     </main>
 
