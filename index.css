@@ -64,9 +64,9 @@ main {
     align-items: center;
 }
 
-/* Style pour "Mes Stages" */
+/* Style pour "Ma formation actuelle ?" */
 .presentation2 {
-    font-size: 1.8rem; /* Taille du texte pour le titre */
+    font-size: 1.8rem; /* Correction de la virgule en point */
     margin-bottom: 1rem;
     color: #ffffff; /* Texte blanc */
     cursor: pointer; /* Indiquer qu'il est cliquable */
@@ -100,11 +100,6 @@ main {
     margin-bottom: 1rem;
 }
 
-/* Style des listes */
 ul {
     padding-left: 10px; /* Décale la liste vers la droite avec un espace intérieur */
-}
-
-ul li {
-    margin-bottom: 0.5rem; /* Espacement entre les éléments de la liste */
 }
