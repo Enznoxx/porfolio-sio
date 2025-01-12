@@ -6,20 +6,33 @@ function toggleContent(id) {
 
 // Lors du chargement complet du DOM
 document.addEventListener('DOMContentLoaded', function() {
-    // Sélectionner tous les titres cliquables qui doivent afficher/masquer du contenu
-    const toggleButtons = document.querySelectorAll('[id^="toggle-text-"]');  // Tous les titres cliquables
-    
-    toggleButtons.forEach(button => {
-        // Extraire l'ID du contenu associé au bouton (en enlevant le préfixe 'toggle-text-')
-        const contentId = 'content-' + button.id.split('-').slice(2).join('-');  // Génère le bon ID pour le contenu
+    // Sélectionner le titre principal "Stage : Institut Mines-Télécom"
+    const formationButton = document.getElementById("toggle-text-formation1");
+    formationButton.addEventListener('click', function() {
+        // Afficher ou masquer le contenu principal
+        toggleContent("content-formation1");
+    });
 
-        // Vérifier si l'élément de contenu existe avant d'ajouter l'événement
-        const content = document.getElementById(contentId);
-        if (content) {
-            // Ajouter un gestionnaire d'événements pour chaque titre
-            button.addEventListener('click', function() {
-                toggleContent(contentId);  // Appeler la fonction pour afficher/masquer le contenu
-            });
-        }
+    // Sélectionner le bouton "Les deux grandes écoles"
+    const telecomSudParisButton = document.getElementById("toggle-text-telecom-sud-paris");
+    telecomSudParisButton.addEventListener('click', function() {
+        // Afficher les deux écoles
+        toggleContent("content-telecom-sud-paris");
+        toggleContent("content-imt-bs");
+    });
+
+    // Sélectionner le bouton "Télécom Sud-Paris"
+    const telecomSudParisDetailsButton = document.getElementById("toggle-text-telecom-sud-paris-details");
+    telecomSudParisDetailsButton.addEventListener('click', function() {
+        // Afficher uniquement la section de Télécom Sud-Paris
+        toggleContent("content-telecom-sud-paris");
+    });
+
+    // Sélectionner le bouton "Institut Mines-Télécom Business School"
+    const imtBsButton = document.getElementById("toggle-text-imt-bs");
+    imtBsButton.addEventListener('click', function() {
+        // Afficher uniquement la section IMT-BS
+        toggleContent("content-imt-bs");
     });
 });
+
