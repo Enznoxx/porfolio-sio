@@ -1,10 +1,3 @@
-/* Réinitialisation des marges et paddings par défaut */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Style global */
 body {
     font-family: 'Arial', sans-serif; /* Utilisation de la même police */
@@ -15,19 +8,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centrer tout le contenu */
-    background-image: url('../fond.jpg'); /* Remplacer le fond gris par l'image */
+    background-image: url('fond.jpg'); /* Remplacer le fond gris par l'image */
     background-size: cover; /* L'image couvrira toute la page */
     background-position: center; /* Centrer l'image */
     background-repeat: no-repeat; /* Empêcher la répétition de l'image */
     background-attachment: fixed; /* Fixe l'image en arrière-plan pendant le défilement */
     height: 100vh; /* S'assure que la hauteur du body prend toute la hauteur de l'écran */
-}
-
-/* Nouveau style pour la balise h1 */
-h1 {
-    font-size: 3rem; /* Taille du texte augmentée */
-    color: #fff; /* Couleur du texte en blanc */
-    margin-bottom: 1rem;
 }
 
 /* Style pour l'entête */
@@ -36,6 +22,13 @@ header {
     padding: 2rem 0;
     text-align: center;
     width: 100%;
+}
+
+/* Nouveau style pour la balise h1 */
+h1 {
+    font-size: 3rem; /* Taille du texte augmentée */
+    color: #fff; /* Couleur du texte en blanc */
+    margin-bottom: 1rem;
 }
 
 /* Menu de navigation */
@@ -71,9 +64,9 @@ main {
     align-items: center;
 }
 
-/* Style pour "Qui suis-je ?" */
+/* Style pour "Ma formation actuelle ?" */
 .presentation2 {
-    font-size: 2rem; /* Taille du texte */
+    font-size: 1.8rem; /* Correction de la virgule en point */
     margin-bottom: 1rem;
     color: #ffffff; /* Texte blanc */
     cursor: pointer; /* Indiquer qu'il est cliquable */
@@ -92,61 +85,21 @@ main {
     display: none; /* Masquer complètement l'élément */
 }
 
-/* Style pour la section avec cadre */
-section {
-    background-color: #ffffff; /* Fond blanc pour la section */
-    color: #333333; /* Texte sombre */
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin-top: 2rem;
-    width: 80%; /* Largeur de la section */
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Ombre autour de la section */
-}
-
-/* Style pour le cadre autour des paragraphes */
+/* Style pour le cadre */
 .cadre {
     background-color: #000000; /* Cadre en noir */
     color: white; /* Texte en blanc */
     border-radius: 8px;
     padding: 1rem;
     margin-top: 2rem;
-    width: 100%;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Ombre autour du cadre */
+    width: 80%;
 }
 
 /* Espacement entre les paragraphes */
-section p {
-    margin-bottom: 1rem;
-}
-
 .cadre p {
     margin-bottom: 1rem;
 }
 
-/* Style pour le lien "Consulter mon CV" et "Télécharger mon CV" */
-a {
-    text-decoration: none;
-    background-color: #0056b3;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-}
-
-a:hover {
-    background-color: #ffa500;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+ul {
+    padding-left: 10px; /* Décale la liste vers la droite avec un espace intérieur */
 }
