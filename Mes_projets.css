@@ -24,6 +24,15 @@ header {
     width: 100%;
 }
 
+/* Nouveau style pour la balise p */
+p {
+    font-size: 1rem; /* Taille du texte augmentée */
+    color: #fff; /* Couleur du texte en blanc */
+    margin-bottom: 1rem;
+}
+
+
+
 /* Nouveau style pour la balise h1 */
 h1 {
     font-size: 3rem; /* Taille du texte augmentée */
