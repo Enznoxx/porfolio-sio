@@ -46,7 +46,7 @@
 
   <li><strong>Surveillance du réseau :</strong> Implémenter des systèmes de surveillance pour détecter en temps réel les problèmes de performance, analyser les journaux pour identifier des failles et détecter les intrusions potentielles.</li>
 
-  <li><strong>Résolution des problèmes de réseau :</strong> Diagnostiquer et résoudre rapidement les problèmes de réseau, gérer les tickets d’incident pour un suivi efficace et une résolution rapide des pannes de connectivité, de matériel ou de logiciels.</li>
+  <li><strong>Résolution des problèmes de réseau :</strong> Diagnostiquer et résoudre rapidement les problèmes de réseau.</li>
 
   <li><strong>Mise à jour du matériel et des logiciels :</strong> Planifier et réaliser des mises à jour régulières du matériel et des logiciels, y compris la mise à jour des firmwares et le remplacement du matériel obsolète ou défectueux.</li>
 
@@ -79,9 +79,8 @@
       <li><strong>Routeurs :</strong> Deux routeurs pour assurer la redondance et la résilience du réseau en cas de défaillance d'un équipement.</li>
       <li><strong>Switchs cœur :</strong> Deux switchs cœur en configuration redondante pour assurer la connectivité principale et la haute disponibilité du réseau.</li>
       <li><strong>Switchs d'accès :</strong> Deux switchs d'accès pour gérer les connexions des utilisateurs et des équipements dans l'infrastructure.</li>
-      <li><strong>EtherChannel :</strong> Utilisation de l'EtherChannel pour la consolidation des liens entre les équipements réseau et la mise en place de l'agrégation de liens, assurant ainsi une bande passante accrue et une redondance.</li>
       <li><strong>Point d'accès Wi-Fi :</strong> Un point d'accès Wi-Fi pour fournir une couverture sans fil aux utilisateurs et garantir une connectivité flexible.</li>
-      <li><strong>VLAN :</strong> Mise en place de VLAN (Virtual Local Area Networks) pour segmenter le réseau et améliorer la sécurité, tout en optimisant le trafic.</li>
+      
     </ul>
 
     <h2>Technologies utilisées</h2>
@@ -93,6 +92,9 @@
       <li><strong>VLAN :</strong> Mise en place de VLAN (Virtual Local Area Networks) pour segmenter le réseau et améliorer la sécurité, tout en optimisant la gestion du trafic et des ressources réseau.</li>
       <li><strong>EtherChannel :</strong> Utilisation de l'EtherChannel pour agréger plusieurs liens physiques en un seul, afin d'augmenter la bande passante et de garantir la redondance des liens entre les équipements.</li>
       <li><strong>HAProxy et Keepalived :</strong> Mise en œuvre de l'équilibrage de charge et de la haute disponibilité pour garantir un service continu en cas de défaillance d'un des serveurs ou d'un élément du réseau.</li>
+      <li><strong>spanning tree</strong> Mise en place du protocole Spanning Tree (STP) pour éviter les boucles réseau et assurer la redondance sans provoquer de tempêtes de broadcast.</li>
+      <li><strong>ACL (Access Control List) :</strong> Configuration des ACLs sur les équipements réseau pour restreindre l'accès à certaines ressources et renforcer la sécurité en filtrant les paquets en fonction des adresses IP, des protocoles et des ports.</li>
+
     </ul>
   </main>
 
