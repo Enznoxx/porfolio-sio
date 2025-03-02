@@ -1,0 +1,112 @@
+/* Style global */
+body {
+    font-family: 'Arial', sans-serif; /* Utilisation de la même police */
+    color: #000000; /* Couleur du texte : noir */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer tout le contenu */
+    background-image: url('fond.jpg'); /* Remplacer le fond gris par l'image */
+    background-size: cover; /* L'image couvrira toute la page */
+    background-position: center; /* Centrer l'image */
+    background-repeat: no-repeat; /* Empêcher la répétition de l'image */
+    background-attachment: fixed; /* Fixe l'image en arrière-plan pendant le défilement */
+    height: 100vh; /* S'assure que la hauteur du body prend toute la hauteur de l'écran */
+}
+
+/* Style pour l'entête */
+header {
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* Nouveau style pour la balise h1 */
+h1 {
+    font-size: 3rem; /* Taille du texte augmentée */
+    color: #fff; /* Couleur du texte en blanc */
+    margin-bottom: 1rem;
+}
+
+/* Nouveau style pour les titres h2 */
+h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+/* Menu de navigation */
+nav {
+    display: flex;
+    flex-direction: row; /* Affichage horizontal des liens */
+    justify-content: center; /* Centrer les éléments horizontalement */
+    gap: 1rem; /* Espacement entre les liens */
+    margin-top: 1rem;
+}
+
+/* Style des liens dans le menu */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    background-color: #0056b3;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ffa500;
+}
+
+/* Style pour le main */
+main {
+    width: 100%;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style pour "Ma formation actuelle ?" */
+.presentation2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ffffff; /* Texte blanc */
+    cursor: pointer; /* Indiquer qu'il est cliquable */
+    text-decoration: underline; /* Souligner le titre */
+    border: none;
+    background: none;
+}
+
+/* Effet au survol : change la couleur en bleu */
+.presentation2:hover {
+    color: #0056b3; /* Bleu au survol */
+}
+
+/* Cacher le contenu par défaut */
+.hidden {
+    display: none; /* Masquer complètement l'élément */
+}
+
+/* Style pour le cadre */
+.cadre {
+    background-color: #000000; /* Cadre en noir */
+    color: white; /* Texte en blanc */
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 2rem;
+    width: 80%;
+}
+
+/* Espacement entre les paragraphes */
+.cadre p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 10px; /* Décale la liste vers la droite avec un espace intérieur */
+}
