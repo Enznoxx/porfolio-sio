@@ -31,10 +31,12 @@
     </p>
 
     <h2>Contexte</h2>
-    <p class="cadre">
-      Ce projet fait partie de ma formation en BTS, dont l'objectif est d'appliquer les compétences acquises dans un cadre professionnel concret. Dans le cadre de ce projet, je simule le rôle d'une société prestataire. En tant que technicien informatique réseau et système chez Synergis, mon équipe et moi sommes responsables du maintien du réseau informatique de Station F. Nous gérons les infrastructures dédiées aux startups, assurons la surveillance continue du réseau, la résolution des problèmes et la mise à jour du matériel et des logiciels du réseau.
-    </p>
-    
+<p class="cadre">
+  Ce projet fait partie de ma formation en BTS, dont l'objectif est d'appliquer les compétences acquises dans un cadre professionnel concret. Dans le cadre de ce projet, je simule le rôle d'une société prestataire. En tant que technicien informatique réseau et système chez Synergis, mon équipe et moi sommes responsables du maintien du réseau informatique de Station F. Nous gérons les infrastructures dédiées aux startups, assurons la surveillance continue du réseau, la résolution des problèmes et la mise à jour du matériel et des logiciels du réseau.
+  <a href="Contexte-Station-F.pdf" target="_blank">Consulter le contexte en PDF</a>
+</p>
+
+
     <h2>Besoins détaillés</h2>
     <ul class="cadre">
       <li><strong>Administration du réseau et des systèmes :</strong> Cela implique la gestion des infrastructures réseau telles que les routeurs, switches, et les serveurs. L’objectif est de s'assurer que tout le matériel est fonctionnel, que les mises à jour logicielles et de sécurité sont appliquées, et que les configurations sont correctement définies pour répondre aux besoins spécifiques des startups hébergées.</li>
@@ -47,16 +49,41 @@
     </ul>
 
     <h2>Outils utilisés</h2>
-<p class="cadre">
-  Pour mener à bien ce projet, différents outils ont été utilisés afin de répondre aux besoins techniques spécifiques de l'infrastructure. Ces outils permettent d'assurer la gestion, la sécurité et l'optimisation du réseau tout en garantissant une haute disponibilité et une résilience maximale pour les startups hébergées à Station F.
-</p>
+    <p class="cadre">
+      Pour mener à bien ce projet, différents outils ont été utilisés afin de répondre aux besoins techniques spécifiques de l'infrastructure. Ces outils permettent d'assurer la gestion, la sécurité et l'optimisation du réseau tout en garantissant une haute disponibilité et une résilience maximale pour les startups hébergées à Station F.
+    </p>
 
-<ul class="cadre">
-  <li><strong>Systemes d'exploitation :</strong> Proxmox, Linux, Windows Server</li>
-  <li><strong>Outils de surveillance et d'analyse :</strong> ELK (Elasticsearch, Logstash, Kibana)</li>
-  <li><strong>Equilibrage de charge et haute disponibilité :</strong> HAProxy, Keepalived</li>
-  <li><strong>Serveur web :</strong> Apache2</li>
-</ul>
+    <ul class="cadre">
+      <li><strong>Systemes d'exploitation :</strong> Proxmox, Linux, Windows Server</li>
+      <li><strong>Outils de surveillance et d'analyse :</strong> ELK (Elasticsearch, Logstash, Kibana)</li>
+      <li><strong>Equilibrage de charge et haute disponibilité :</strong> HAProxy, Keepalived</li>
+      <li><strong>Serveur web :</strong> Apache2</li>
+    </ul>
+
+    <h2>Matériel utilisé</h2>
+    <p class="cadre">
+      Afin de garantir une infrastructure fiable et performante pour les startups, plusieurs équipements ont été utilisés dans ce projet. Ces matériels ont été choisis pour leur capacité à offrir une haute disponibilité, une redondance et des performances optimales pour répondre aux exigences de Station F.
+    </p>
+
+    <ul class="cadre">
+      <li><strong>Routeurs :</strong> Deux routeurs pour assurer la redondance et la résilience du réseau en cas de défaillance d'un équipement.</li>
+      <li><strong>Switchs cœur :</strong> Deux switchs cœur en configuration redondante pour assurer la connectivité principale et la haute disponibilité du réseau.</li>
+      <li><strong>Switchs d'accès :</strong> Deux switchs d'accès pour gérer les connexions des utilisateurs et des équipements dans l'infrastructure.</li>
+      <li><strong>EtherChannel :</strong> Utilisation de l'EtherChannel pour la consolidation des liens entre les équipements réseau et la mise en place de l'agrégation de liens, assurant ainsi une bande passante accrue et une redondance.</li>
+      <li><strong>Point d'accès Wi-Fi :</strong> Un point d'accès Wi-Fi pour fournir une couverture sans fil aux utilisateurs et garantir une connectivité flexible.</li>
+      <li><strong>VLAN :</strong> Mise en place de VLAN (Virtual Local Area Networks) pour segmenter le réseau et améliorer la sécurité, tout en optimisant le trafic.</li>
+    </ul>
+
+    <h2>Technologies utilisées</h2>
+    <p class="cadre">
+      Pour assurer la performance, la sécurité et la gestion efficace de l'infrastructure, diverses technologies avancées ont été mises en place dans ce projet.
+    </p>
+
+    <ul class="cadre">
+      <li><strong>VLAN :</strong> Mise en place de VLAN (Virtual Local Area Networks) pour segmenter le réseau et améliorer la sécurité, tout en optimisant la gestion du trafic et des ressources réseau.</li>
+      <li><strong>EtherChannel :</strong> Utilisation de l'EtherChannel pour agréger plusieurs liens physiques en un seul, afin d'augmenter la bande passante et de garantir la redondance des liens entre les équipements.</li>
+      <li><strong>HAProxy et Keepalived :</strong> Mise en œuvre de l'équilibrage de charge et de la haute disponibilité pour garantir un service continu en cas de défaillance d'un des serveurs ou d'un élément du réseau.</li>
+    </ul>
   </main>
 
 </body>
