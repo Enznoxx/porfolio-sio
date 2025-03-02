@@ -105,6 +105,16 @@ main {
 /* Espacement entre les paragraphes */
 .cadre p {
     margin-bottom: 1rem;
+        border: 2px solid #000;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+    
+    ul.cadre li {
+        margin-bottom: 15px; /* Espacement entre chaque élément de la liste */
+    }
+    
 }
 
 ul {
