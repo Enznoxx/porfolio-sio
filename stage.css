@@ -82,10 +82,6 @@ main {
     color: #0056b3; /* Bleu au survol */
 }
 
-/* Cacher le contenu par défaut */
-.hidden {
-    display: none; /* Masquer complètement l'élément */
-}
 
 /* Style pour le cadre */
 .cadre {
