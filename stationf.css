@@ -120,13 +120,13 @@ main {
 ul {
     padding-left: 10px; /* Décale la liste vers la droite avec un espace intérieur */
 }
-
 .images-group {
-    display: flex;
-    gap: 10px; /* Espacement entre les images */
+    text-align: center; /* Centrer les images */
 }
 
 .images-group img {
-    max-width: 100%; /* Pour s'assurer que les images restent bien ajustées */
+    display: inline-block; /* Permet aux images de se suivre mais passer à la ligne si nécessaire */
+    margin: 5px; /* Ajoute un petit espace entre elles */
+    max-width: 100%; /* Ajuste la taille pour éviter les débordements */
     height: auto;
 }

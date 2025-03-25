@@ -106,3 +106,14 @@ ul {
 ul li {
     margin-bottom: 0.5rem; /* Espacement entre les éléments de la liste */
 }
+
+.images-group {
+    text-align: center; /* Centrer les images */
+}
+
+.images-group img {
+    display: inline-block; /* Permet aux images de se suivre mais passer à la ligne si nécessaire */
+    margin: 5px; /* Ajoute un petit espace entre elles */
+    max-width: 100%; /* Ajuste la taille pour éviter les débordements */
+    height: auto;
+}
