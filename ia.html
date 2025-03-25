@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stationf.css"> <!-- Lien vers le fichier CSS -->
-    <title>Projet perso : IA Local</title>
+    <title>Projet IA Local</title>
 </head>
 <body>
-  <header> </header> <!-- Définissez votre en-tête ici --> 
+  <header>
+    <h1>Projet IA Local</h1> <!-- Titre de l'en-tête -->
+  </header>
+  
   <nav>
     <a href="index.html">Accueil</a>
     <a href="CV.html">Mon CV</a>
@@ -17,30 +20,25 @@
     <a href="Mes_compétences.html">Mes compétences</a>
     <a href="Ma_veille_technologie.html">Ma veille technologique</a>
   </nav>
+
   <main>
-    <h1>Projet d'IA Local</h1>
-
-    <h2>Présentation du projet</h2>
-    <p class="cadre">Ce projet a été réalisé pour le fun dans le but de mettre en place une IA en local avec une interface graphique. Il comprend également la mise en place d'un service DNS pour le réseau local.</p>
-
-    <h2>But du projet</h2>
+    <h2>Présentation</h2>
     <p class="cadre">
-      L'objectif de ce projet est de déployer une intelligence artificielle locale accessible via une interface graphique. Cette IA peut être utilisée pour des tâches variées et est conçue pour être accessible facilement. J'ai également mis en place un service DNS pour faciliter l'accès aux différents services locaux de l'IA.
+      Ce projet a été réalisé à titre personnel, sans objectif précis, principalement par curiosité et pour le plaisir d'expérimenter. J'ai mis en place un serveur local (Ollama) dédié à l'exécution de modèles de langage (LLM), et je l'ai connecté à une interface graphique via Open-WebUI pour faciliter son utilisation.
+    </p>
+    <p>
+      Afin d'assurer la sécurité des communications entre le serveur LLM et l'interface graphique, j'ai mis en place un certificat SSL auto-signé pour chiffrer les trames de données échangées. De plus, j'ai configuré un service DNS pour accéder à l'interface via un nom de domaine, et j'ai installé un serveur OpenVPN pour permettre un accès sécurisé à mon serveur IA depuis l'extérieur, sans avoir besoin de l'héberger sur Internet.
     </p>
 
-    <h2>Contexte</h2>
-    <p class="cadre">
-      Ce projet est un projet personnel dans lequel j'ai exploré l'implémentation d'une IA locale et d'une interface graphique via Open-WebUI. En plus de l'IA, j'ai mis en place un service DNS afin d'améliorer l'efficacité et la gestion des services réseau internes pour une utilisation simplifiée.
-    </p>
+    <h2>Tâches réalisées pendant le projet</h2>
+    <ul>
+        <li>Installation d'un serveur local dédié à l'exécution de modèles de langage (LLM).</li>
+        <li>Connexion du serveur d'IA à l'interface graphique via Open-WebUI.</li>
+        <li>Mise en place d'un service DNS sur Linux pour la gestion des ressources internes.</li>
+        <li>Installation et configuration d'un serveur OpenVPN pour un accès sécurisé depuis l'extérieur.</li>
+        <li>Configuration d'un certificat SSL auto-signé pour chiffrer les communications entre le serveur LLM et l'interface graphique.</li>
+    </ul>
 
-    <section class="cadre">
-      <h2>Mes tâches pendant le projet</h2>
-        <ul>
-                        <li>Mise en place d'une IA en local</li>
-                        <li>Création d'une interface graphique avec Open-WebUI</li>
-                        <li>Configuration d'un service DNS pour le réseau local</li>
-        </ul>
-    </section>
   </main>
 
 </body>
